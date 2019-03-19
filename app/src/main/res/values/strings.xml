@@ -3,4 +3,5 @@
 
     <!-- Intro slide title and description -->
     <string name="slide_1_title">Opatile Kelobang \nCode Space</string>
+    <string name="slide_1_desc">Please take the time to submit a comment on your experience. This will help me create better apps in future!</string>
 </resources>
