@@ -9,4 +9,5 @@
     <string name="my_preferences">"co.za.bogote.MyPref"</string>
     <string name="my_preferences_key">"co.za.bogote.MyPrefKey"</string>
     <string name="img_content_description">Idea Crown</string>
+    <string name="keep_calm">KEEP CALM</string>
 </resources>
