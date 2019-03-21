@@ -6,4 +6,8 @@
 
     <!-- Intro slide Colour Pattern -->
     <color name="colorSlide1">#019592</color>
+
+    <!-- Slider Dots color pattern -->
+    <color name="active_dots">#FFFAFA</color>
+    <color name="inactive_dots">#83878B</color>
 </resources>
