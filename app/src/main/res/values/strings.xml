@@ -13,4 +13,6 @@
 
     <!-- Slide 2 Strings -->
     <string name="visitors_name">Visitors Name:</string>
+    <string name="button_next">NEXT</string>
+    <string name="username">Enter Your Name</string>
 </resources>
