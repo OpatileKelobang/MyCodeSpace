@@ -33,6 +33,34 @@
         android:gravity="center"
         android:layout_marginBottom="55sp"
         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_skip"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@null"
+        android:id="@+id/btnSkip"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/white"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_next"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:id="@+id/btnNext"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/white"
+        />
     
 
 
