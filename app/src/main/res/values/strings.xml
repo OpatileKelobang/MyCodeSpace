@@ -16,4 +16,5 @@
     <string name="username">Enter Your Name</string>
     <string name="button_skip">SKIP</string>
     <string name="button_next">NEXT</string>
+    <string name="button_start">START</string>
 </resources>

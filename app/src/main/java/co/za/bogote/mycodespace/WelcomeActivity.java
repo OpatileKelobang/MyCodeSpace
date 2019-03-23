@@ -28,7 +28,11 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_welcome);
+
+        if (new PreferenceManager(this).checkPreference())
+        {
+            loadHome();
+        }
 
         if(Build.VERSION.SDK_INT >= 19)
         {
@@ -38,6 +42,10 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
             {
                 getWindow().clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             }
+
+
+        setContentView(R.layout.activity_welcome);
+
 
         mPager = (ViewPager) findViewById(R.id.viewPager);
         mpagerAdapter =  new MpagerAdapter(layouts, this);
@@ -57,8 +65,20 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
             }
 
             @Override
-            public void onPageSelected(int position) {
+            public void onPageSelected(int position)
+            {
                 createDots(position);
+                if (position == layouts.length - 1)
+                {
+                    btnNext.setText(getString(R.string.button_start));
+                    btnSkip.setVisibility(View.INVISIBLE);
+                }
+                else
+                    {
+                        btnNext.setText(getString(R.string.button_next));
+                        btnSkip.setVisibility(View.VISIBLE);
+                    }
+
             }
 
             @Override
@@ -101,10 +121,12 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
         switch (view.getId())
         {
             case R.id.btnNext:
+                loadNextSlide();
                 break;
 
             case R.id.btnSkip:
                 loadHome();
+                new PreferenceManager(this).writePreference();
                 break;
         }
     }
@@ -113,5 +135,20 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
     {
         startActivity(new Intent(this,MainActivity.class));
         finish();
+    }
+
+    private void loadNextSlide()
+    {
+        int next_slide = mPager.getCurrentItem() + 1;
+
+        if (next_slide < layouts.length)
+        {
+            mPager.setCurrentItem(next_slide);
+        }
+        else
+            {
+                loadHome();
+                new PreferenceManager(this).writePreference();
+            }
     }
 }
