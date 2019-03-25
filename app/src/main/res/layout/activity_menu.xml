@@ -56,6 +56,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="fill"
+            android:drawableLeft="@drawable/home_24px"
+            android:drawablePadding="10dp"
+            android:onClick="loadIntroScreen"
             android:text="@string/home_button" />
 
         <Button style="@style/Widget.AppCompat.Button.Borderless"

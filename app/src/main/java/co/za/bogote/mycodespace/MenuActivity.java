@@ -7,6 +7,7 @@
 
 package co.za.bogote.mycodespace;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -30,4 +31,10 @@ public class MenuActivity extends AppCompatActivity {
         }
     }
 
+    public void loadIntroScreen(View view)
+    {
+        new PreferenceManager(this).clearPreference();
+        startActivity(new Intent(this, WelcomeActivity.class));
+        finish();
+    }
 }
