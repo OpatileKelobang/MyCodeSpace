@@ -2,7 +2,6 @@
     <string name="app_name">My Code Space</string>
 
     <!-- Intro slide title and description -->
-    <string name="slide_1_title">Opatile Kelobang \nCode Space</string>
     <string name="slide_1_desc">Please take the time to submit a comment on your experience. This will help me create better apps in future!</string>
 
     <!-- preferences -->
@@ -17,4 +16,23 @@
     <string name="button_skip">SKIP</string>
     <string name="button_next">NEXT</string>
     <string name="button_start">START</string>
+
+    <!-- Facebook Login Strings -->
+    <string name="facebook_app_id">586072848534824</string>
+    <string name="fb_login_protocol_scheme">fb586072848534824</string>
+
+    <!-- Main Activity Strings -->
+    <string name="student_name">Opatile Kelobang</string>
+    <string name="code_space">Code Space</string>
+    <string name="main_btn_next">NEXT</string>
+
+    <!-- Main Menu strings -->
+    <string name="main_menu_welcome">Welcome</string>
+    <string name="Welcome_code_space">Welcome to my Code Space</string>
+    <string name="home_button">Home</string>
+    <string name="calc_button">Calculation</string>
+    <string name="about_me_button">About Me</string>
+    <string name="dev_profile_button">My Dev Profile</string>
+
+
 </resources>
