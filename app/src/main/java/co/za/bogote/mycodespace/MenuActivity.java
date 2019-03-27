@@ -37,4 +37,22 @@ public class MenuActivity extends AppCompatActivity {
         startActivity(new Intent(this, WelcomeActivity.class));
         finish();
     }
+
+    public void calculationBtnClicked(View view)
+    {
+        startActivity(new Intent(this, CalculationActivity.class));
+        finish();
+    }
+
+    public void aboutMeBtnClicked(View view)
+    {
+        startActivity(new Intent(this, AboutMe.class));
+        finish();
+    }
+
+    public void devProfileBtnClicked(View view)
+    {
+        startActivity(new Intent(this, DevProfile.class ));
+        finish();
+    }
 }

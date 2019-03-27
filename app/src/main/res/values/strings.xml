@@ -34,5 +34,17 @@
     <string name="about_me_button">About Me</string>
     <string name="dev_profile_button">My Dev Profile</string>
 
+    <!-- Calculation activity strings-->
+    <string name="calculation_placeholder">WELCOME TO THE CALCULATOR</string>
+
+
+    <!-- About Me Strings -->
+    <string name="about_me_plcaeholder">WELCOME TO ABOUT ME PAGE</string>
+
+
+    <!-- Dev Profile strings -->
+    <string name="dev_profile_title">DEV PROFILE PAGE</string>
+    <string name="back_btn">MAIN MENU</string>
+
 
 </resources>

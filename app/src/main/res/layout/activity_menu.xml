@@ -24,8 +24,7 @@
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/menu_textview_code_space"
@@ -33,8 +32,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/Welcome_code_space"
-        app:layout_constraintTop_toBottomOf="@+id/main_menu_welcome"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/main_menu_welcome" />
 
     <LinearLayout
         android:id="@+id/menu_container_top"
@@ -42,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:orientation="horizontal"
@@ -50,26 +48,76 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/menu_textview_code_space">
 
-        <Button style="@style/Widget.AppCompat.Button.Borderless"
+        <Button
             android:id="@+id/home"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="fill"
+            android:drawableStart="@drawable/home_24px"
             android:drawableLeft="@drawable/home_24px"
             android:drawablePadding="10dp"
+            android:gravity="fill"
             android:onClick="loadIntroScreen"
             android:text="@string/home_button" />
 
-        <Button style="@style/Widget.AppCompat.Button.Borderless"
+        <Button
             android:id="@+id/calculation"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="calculationBtnClicked"
             android:text="@string/calc_button" />
+
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/menu_container_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
 
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_container_top">
+
+        <Button
+            android:id="@+id/about_me_button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:onClick="aboutMeBtnClicked"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="fill"
+            android:text="@string/about_me_button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_container_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_container_middle">
+
+        <Button
+            android:id="@+id/my_profile_button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="230dp"
+            android:layout_height="0dp"
+            android:onClick="devProfileBtnClicked"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:gravity="fill"
+            android:text="@string/dev_profile_button" />
+    </LinearLayout>
 
 
 </android.support.constraint.ConstraintLayout>

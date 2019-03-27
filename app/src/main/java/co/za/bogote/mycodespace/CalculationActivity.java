@@ -1,0 +1,20 @@
+/*
+ * Copyright (c) 2019.
+ * Opatile Kelobang
+ * http://www.bogote.co.za
+ * Android App Development
+ */
+
+package co.za.bogote.mycodespace;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class CalculationActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_calculation);
+    }
+}
