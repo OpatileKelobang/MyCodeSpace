@@ -14,6 +14,7 @@
     tools:context=".CalculationActivity"
     android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
+
     <android.support.v7.widget.Toolbar
         android:id="@+id/myToolbar"
         android:layout_width="0dp"
@@ -28,6 +29,7 @@
 
     <ImageButton
         android:id="@+id/top_back_button"
+        android:contentDescription="@string/back_btn"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -41,4 +43,135 @@
         app:srcCompat="?attr/actionModeCloseDrawable"
         android:onClick="goToMainScreen"
         />
+
+    <TextView
+        android:id="@+id/calculation_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="97dp"
+        android:text="@string/calculation_text"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myToolbar" />
+
+    <ImageView
+        android:id="@+id/image_equation"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="528dp"
+        android:contentDescription="@string/trapezoid_des"
+        android:gravity="center"
+        android:src="@drawable/trapezoid_equation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculation_header"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="435dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_equation">
+
+        <EditText
+            android:id="@+id/input_base1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:layout_gravity="fill"
+            android:hint="@string/base1"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:textAlignment="center"
+            tools:ignore="Autofill"
+            tools:targetApi="o" />
+
+        <EditText
+            android:id="@+id/input_base2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:layout_gravity="fill"
+            android:hint="@string/base2"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:textAlignment="center"
+            tools:ignore="Autofill"
+            tools:targetApi="o" />
+
+        <EditText
+            android:id="@+id/input_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/height"
+            android:inputType="number"
+            android:textAlignment="center"
+            tools:ignore="Autofill"
+            tools:targetApi="o" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/button_add"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="@string/calculate" />
+
+        <Button
+            android:id="@+id/clear_btn"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="@string/clear" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/answer_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginRight="128dp"
+        android:text="@string/answer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+
 </android.support.constraint.ConstraintLayout>

@@ -10,6 +10,7 @@ package co.za.bogote.mycodespace;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.view.SupportMenuInflater;
@@ -22,7 +23,6 @@ import static co.za.bogote.mycodespace.R.menu.navigation_items;
 
 public class DevProfile extends AppCompatActivity {
 
-    private Toolbar myToolbar;
 
 
     @Override
@@ -31,6 +31,7 @@ public class DevProfile extends AppCompatActivity {
         setContentView(R.layout.activity_dev_profile);
 
     }
+
 
     // Add Item To Menu
     public boolean onCreateOptionsMenu(Menu menu)

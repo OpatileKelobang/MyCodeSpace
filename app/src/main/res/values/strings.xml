@@ -35,7 +35,15 @@
     <string name="dev_profile_button">My Dev Profile</string>
 
     <!-- Calculation activity strings-->
-    <string name="calculation_placeholder">WELCOME TO THE CALCULATOR</string>
+    <string name="calculation_text">TRAPEZOID AREA CALCULATOR</string>
+    <string name="calculation_header"></string>
+    <string name="trapezoid_des">Trapezoid Equation</string>
+    <string name="height">height</string>
+    <string name="base1">base 1</string>
+    <string name="base2">base 2</string>
+    <string name="calculate">Calculate Area</string>
+    <string name="answer">Area of the Trapezoid is: </string>
+    <string name="clear">Reset View</string>
 
 
     <!-- About Me Strings -->
