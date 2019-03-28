@@ -22,11 +22,19 @@ public class MainActivity extends AppCompatActivity {
 
     public void nextBtnOnClicked(View view)
     {
-        Toast.makeText(getApplicationContext(), "Welcome to my Code Space " + visitorName.getText().toString(), Toast.LENGTH_LONG).show();
-        Intent intent = new Intent(this, MenuActivity.class);
-        intent.putExtra("Username", visitorName.getText().toString());
-        finish();
-        startActivity(intent);
+        if (visitorName != null)
+        {
+            Toast.makeText(getApplicationContext(), "Welcome to my Code Space " + visitorName.getText().toString(), Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(this, MenuActivity.class);
+            intent.putExtra("Username", visitorName.getText().toString());
+            finish();
+            startActivity(intent);
+        }
+        else
+            {
+                Toast.makeText(this, "Please enter your name", Toast.LENGTH_SHORT).show();
+            }
+
     }
 
 

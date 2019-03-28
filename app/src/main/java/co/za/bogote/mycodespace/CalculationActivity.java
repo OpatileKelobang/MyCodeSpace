@@ -66,7 +66,7 @@ public class CalculationActivity extends AppCompatActivity {
                 base1.setText("");
                 base2.setText("");
                 height.setText("");
-                answer.setText("");
+                answer.setText("Area of the Trapezoid is: ");
                 base1.requestFocus();
             }
 
