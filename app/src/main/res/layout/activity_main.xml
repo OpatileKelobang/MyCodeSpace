@@ -82,7 +82,6 @@
         app:layout_constraintTop_toBottomOf="@+id/visitors_name" />
 
     <Button style="@style/Widget.AppCompat.Button.Colored"
-        android:onClick="nextBtnOnClicked"
         android:id="@+id/main_btn_next"
         android:layout_width="300dp"
         android:layout_height="60dp"
