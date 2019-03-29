@@ -3,6 +3,7 @@
 
     <!-- Intro slide title and description -->
     <string name="slide_1_desc">Please take the time to submit a comment on your experience. This will help me create better apps in future!</string>
+    <string name="logo_main">Main Logo</string>
 
     <!-- preferences -->
     <string name="my_preferences">"co.za.bogote.MyPref"</string>

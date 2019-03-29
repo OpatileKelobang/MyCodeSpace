@@ -5,56 +5,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorSlide1">
+    android:background="@drawable/background_dark">
 
-    <ImageView
-        android:id="@+id/img"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="184dp"
-        android:layout_marginBottom="34dp"
-        android:contentDescription="@string/img_content_description"
-        android:scaleType="centerCrop"
-        android:src="@drawable/crown"
-        app:layout_constraintBottom_toTopOf="@+id/slide_title"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/slide_title"
+    <LinearLayout
+        android:id="@+id/image_place_holder"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/img"
-        android:layout_marginTop="34dp"
-        android:gravity="center_horizontal"
-        android:text="@string/keep_calm"
-        android:textColor="@android:color/white"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/img"
-        app:layout_constraintBottom_toTopOf="@+id/slide_desc"
-        tools:layout_editor_absoluteX="0dp" />
-
-    <TextView
-        android:id="@+id/slide_desc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="47dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
-        android:layout_marginBottom="250dp"
-        android:gravity="center_horizontal"
-        android:text="@string/slide_1_desc"
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/slide_title" />
+        app:layout_constraintTop_toTopOf="parent">
 
-
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"
+            android:contentDescription="@string/logo_main"
+            app:srcCompat="@drawable/bogote" />
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
