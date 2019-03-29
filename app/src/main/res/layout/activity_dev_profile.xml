@@ -49,10 +49,78 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="33dp"
-        android:text="@string/dev_profile_title"
+        android:text="@string/my_details"
         app:layout_constraintTop_toBottomOf="@+id/myToolbar"
         android:textAlignment="center"
          />
+
+    <LinearLayout
+        android:id="@+id/dev_layout_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:layout_marginBottom="490dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dev_title">
+
+        <ImageButton
+            android:id="@+id/dev_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:contentDescription="@string/dev_user"
+            android:src="@drawable/user_shape_24px"
+            android:background="#00000000"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:id="@+id/dev_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:text="@string/dev_name"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dev_layout_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:layout_marginBottom="490dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dev_layout_name">
+
+        <ImageButton
+            android:id="@+id/dev_contact_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:contentDescription="@string/dev_user"
+            android:src="@drawable/mobile_phone_24px"
+            android:background="#00000000"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:id="@+id/dev_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:text="@string/dev_contact"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
 
 
 </android.support.constraint.ConstraintLayout>
