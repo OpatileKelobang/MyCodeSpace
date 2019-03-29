@@ -61,7 +61,7 @@
     <string name="image_desc">Because I don\'t know how to make an image gallery in android, yet, here\'s a random photo I took of a couple on their wedding day. I did say my favorite pastime was photography right?</string>
 
     <!-- Dev Profile strings -->
-    <string name="dev_profile_title">DEV PROFILE PAGE</string>
+    <string name="dev_profile_title">MY DEV DETAILS</string>
     <string name="back_btn">MAIN MENU</string>
 
 

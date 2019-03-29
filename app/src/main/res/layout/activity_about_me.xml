@@ -101,13 +101,13 @@
                 android:layout_height="wrap_content"
                 android:text="@string/skills"
                 />
+
             <TextView
                 android:id="@+id/hobbies"
-                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/hobbies"
-                />
+                android:layout_marginTop="10dp"
+                android:text="@string/hobbies" />
 
             <TextView
                 android:id="@+id/future"
