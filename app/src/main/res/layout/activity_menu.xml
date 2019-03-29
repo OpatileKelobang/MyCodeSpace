@@ -11,122 +11,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuActivity">
-
+    tools:context=".MenuActivity"
+    android:background="@drawable/ui_background_with_dark_block">
 
     <TextView
         android:id="@+id/main_menu_welcome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:gravity="center"
+        android:layout_marginTop="40dp"
         android:text="@string/main_menu_welcome"
-        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="34sp"
+        app:fontFamily="sans-serif-light"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/menu_textview_code_space"
+    <GridLayout
+        android:id="@+id/menu_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/Welcome_code_space"
-        app:layout_constraintTop_toBottomOf="@+id/main_menu_welcome" />
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:layout_marginTop="100dp"
+        android:columnOrderPreserved="false"
+        android:padding="14dp"
+        android:rowCount="2"
+        app:layout_constraintTop_toBottomOf="@id/main_menu_welcome">
 
-    <LinearLayout
-        android:id="@+id/menu_container_top"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menu_textview_code_space">
-
-        <Button
-            android:id="@+id/home"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:drawableStart="@drawable/home_24px"
-            android:drawableLeft="@drawable/home_24px"
-            android:drawablePadding="20dp"
-            android:gravity="fill"
-            android:onClick="loadIntroScreen"
-            android:text="@string/home_button" />
-
-        <Button
-            android:id="@+id/calculation"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawablePadding="20dp"
-            android:drawableStart="@drawable/calculator_solid_24px"
-            android:drawableLeft="@drawable/calculator_solid_24px"
-            android:layout_weight="1"
-            android:onClick="calculationBtnClicked"
-            android:text="@string/calc_button" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/menu_container_middle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menu_container_top">
-
-        <Button
-            android:id="@+id/about_me_button"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="wrap_content"
+        <!-- Row 1 col 1 -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/menu_container"
+            android:layout_width="0dp"
             android:layout_height="0dp"
-            android:drawablePadding="10dp"
-            android:drawableStart="@drawable/user_shape_24px"
-            android:drawableLeft="@drawable/user_shape_24px"
-            android:onClick="aboutMeBtnClicked"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:gravity="fill"
-            android:text="@string/about_me_button" />
-    </LinearLayout>
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            tools:targetApi="o">
 
-    <LinearLayout
-        android:id="@+id/menu_container_bottom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:gravity="center"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menu_container_middle">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
 
-        <Button
-            android:id="@+id/my_profile_button"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="230dp"
-            android:layout_height="0dp"
-            android:drawablePadding="10dp"
-            android:drawableStart="@drawable/address_card_solid_24px"
-            android:drawableLeft="@drawable/address_card_solid_24px"
-            android:onClick="devProfileBtnClicked"
-            android:layout_gravity="center"
-            android:textAlignment="center"
-            android:layout_weight="1"
-            android:gravity="fill"
-            android:text="@string/dev_profile_button" />
-    </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </GridLayout>
+
 
 
 </android.support.constraint.ConstraintLayout>
