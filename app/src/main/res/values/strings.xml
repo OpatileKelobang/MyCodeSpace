@@ -47,8 +47,18 @@
 
 
     <!-- About Me Strings -->
-    <string name="about_me_plcaeholder">WELCOME TO ABOUT ME PAGE</string>
-
+    <string name="about_me_header">ABOUT ME</string>
+    <string name="profile_pic">Profile Picture</string>
+    <string name="my_intro">My name is Opatile. I like all things Tech, and I am learning to create Android Apps. So far so good, because I\'m not dead yet.</string>
+    <string name="skills">I have many skills in many things, but I\'m always on a learning path. A wise man once said, \"a jack of all trades is a master of none\"!</string>
+    <string name="hobbies">My favorite pastimes is photography. If I\'m not doing that, I\'m probably watching football or playing Call of Duty.</string>
+    <string name="future">In future, I would like to make a real difference. I have lots of ideas floating around in my head, but as of now, I\'ve set myself short term goals, the first of which is to graduate. After that, the sky is the limit.</string>
+    <string name="team">From what I\'ve heard, I\'m not a fun person to work with in a team. I suppose that\'s because my greatest quality can also be my worst. I take things too seriously. I\'m learning to smile a bit more nowadays, but generally I\'m a happy chap. I just live in my own head.</string>
+    <string name="more_info">I come from a small village, and spent most of my teen years in boarding school. I suppose that\s why I\'m independent. It wasn\'t always easy, being on my own, but I learned some valuable lessons about myself.  </string>
+    <string name="other_stuff">As a student in 2018, I\'ve also learned to schedule, and handle many different tasks at once. This has helped me a lot in the classroom, where I engage with many different personalities on a daily.</string>
+    <string name="sign_off">To sign off this long history lesson of myself, here\'s a piece of unsolicited advice: \"Be kind to others, even those whom you don\'t always agree with. Its very easy to forget that we are not perfect. One day it could be you who is owes someone an apology\"</string>
+    <string name="random_image">Daryl and Lyndsay</string>
+    <string name="image_desc">Because I don\'t know how to make an image gallery in android, yet, here\'s a random photo I took of a couple on their wedding day. I did say my favorite pastime was photography right?</string>
 
     <!-- Dev Profile strings -->
     <string name="dev_profile_title">DEV PROFILE PAGE</string>

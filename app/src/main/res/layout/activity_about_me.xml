@@ -6,7 +6,8 @@
   ~ Android App Development
   -->
 
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -33,6 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginLeft="100dp"
+        android:contentDescription="@string/back_btn"
         android:layout_marginTop="55dp"
         app:layout_constraintBottom_toTopOf="@+id/myToolbar"
         app:layout_constraintEnd_toStartOf="@+id/myToolbar"
@@ -41,5 +43,128 @@
         app:srcCompat="?attr/actionModeCloseDrawable"
         android:onClick="goToMainScreen"
         />
+
+    <TextView
+        android:id="@+id/about_me_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="@string/about_me_header"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/myToolbar"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="118dp"
+        android:layout_marginLeft="118dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginRight="118dp"
+        android:layout_marginBottom="413dp"
+        android:src="@drawable/selfie_opatile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_me_header" />
+
+    <ScrollView
+        android:id="@+id/text_scroll_view"
+        android:layout_width="395dp"
+        android:layout_height="396dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_pic">
+
+        <LinearLayout
+            android:id="@+id/text_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/my_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/my_intro"
+                />
+            <TextView
+                android:id="@+id/skills"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/skills"
+                />
+            <TextView
+                android:id="@+id/hobbies"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hobbies"
+                />
+
+            <TextView
+                android:id="@+id/future"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/future"
+                />
+            <TextView
+                android:id="@+id/team"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/team"
+                />
+
+            <TextView
+                android:id="@+id/more_info"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/more_info"
+                />
+            <TextView
+                android:id="@+id/other_stuff"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/other_stuff"
+                />
+            <TextView
+                android:id="@+id/sign_off"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_off"
+                />
+            <ImageView
+                android:id="@+id/random"
+                android:layout_marginTop="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dary_lyndsay"
+                android:contentDescription="@string/random_image"
+                />
+            <TextView
+                android:id="@+id/image_desc"
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/image_desc"
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
 
 </android.support.constraint.ConstraintLayout>
