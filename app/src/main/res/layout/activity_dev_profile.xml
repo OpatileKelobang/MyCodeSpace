@@ -107,6 +107,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="10"
+            android:textSize="18sp"
             android:text="@string/dev_name" />
     </LinearLayout>
 
@@ -138,6 +139,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="10"
+            android:textSize="18sp"
             android:text="@string/dev_contact" />
     </LinearLayout>
 
@@ -169,6 +171,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="10"
+            android:textSize="18sp"
             android:text="@string/dev_email" />
     </LinearLayout>
 
@@ -200,6 +203,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="10"
+            android:textSize="18sp"
             android:text="@string/dev_twitter" />
     </LinearLayout>
 
@@ -231,6 +235,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="10"
+            android:textSize="18sp"
             android:text="@string/dev_instagram" />
     </LinearLayout>
 

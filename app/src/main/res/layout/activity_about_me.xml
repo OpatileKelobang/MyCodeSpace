@@ -157,13 +157,13 @@
                 android:text="@string/sign_off"
                 android:textSize="18sp" />
 
-            <TextView
+            <!--<TextView
                 android:id="@+id/image_desc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"
                 android:text="@string/last_bit"
-                android:textSize="18sp" />
+                android:textSize="18sp" />-->
 
         </LinearLayout>
 
