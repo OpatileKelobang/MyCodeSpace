@@ -6,7 +6,7 @@
   ~ Android App Development
   -->
 
-<RelativeLayout
+<android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -40,33 +40,9 @@
         app:layout_constraintEnd_toStartOf="@+id/myToolbar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="?attr/actionModeCloseDrawable"
+        android:src="@drawable/arrow_back_white_24dp"
         android:onClick="goToMainScreen"
         />
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycleView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="10dp"
-        android:layout_above="@+id/progressBar"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="24dp"
-        android:layout_alignParentTop="true"
-        />
 
-        <ProgressBar
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:id="@+id/progressBar"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:visibility="gone"
-            />
-
-
-
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
