@@ -30,7 +30,7 @@
     <!-- Main Menu strings -->
     <string name="main_menu_welcome">MAIN MENU</string>
     <string name="Welcome_code_space">Welcome to my Code Space</string>
-    <string name="home_button">Home</string>
+    <string name="home_button">Intro Screen</string>
     <string name="calc_button">Calculation</string>
     <string name="about_me_button">About Me</string>
     <string name="dev_profile_button">My Dev Profile</string>
