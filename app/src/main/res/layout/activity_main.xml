@@ -67,26 +67,22 @@
     </LinearLayout>
 
 
-
-
     <Button
         android:id="@+id/main_btn_next"
         style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="300dp"
+        android:layout_width="335dp"
         android:layout_height="60dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginLeft="55dp"
-        android:layout_marginTop="87dp"
-        android:layout_marginEnd="55dp"
-        android:layout_marginRight="55dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
         android:layout_marginBottom="150dp"
-        android:background="@drawable/next_button_large_white"
+        android:background="@drawable/next_button_large_green_glow"
         android:text="@string/main_btn_next"
-        android:textColor="#565C64"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-         />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

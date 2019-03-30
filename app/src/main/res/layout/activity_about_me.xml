@@ -13,6 +13,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AboutMe"
+    android:background="@drawable/ui_background_with_dark_block"
     android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
     <android.support.v7.widget.Toolbar
@@ -48,9 +49,12 @@
         android:id="@+id/about_me_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="33dp"
+        android:layout_marginTop="20dp"
         android:text="@string/about_me_header"
         android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="34sp"
+        app:fontFamily="sans-serif-light"
         app:layout_constraintTop_toBottomOf="@+id/myToolbar"
         tools:layout_editor_absoluteX="0dp" />
 
@@ -61,21 +65,23 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginStart="118dp"
         android:layout_marginLeft="118dp"
-        android:layout_marginTop="35dp"
         android:layout_marginEnd="118dp"
         android:layout_marginRight="118dp"
-        android:layout_marginBottom="413dp"
+        android:elevation="8dp"
         android:src="@drawable/selfie_opatile"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="2dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/about_me_header" />
+        app:layout_constraintTop_toBottomOf="@+id/about_me_header"
+        tools:targetApi="o" />
 
     <ScrollView
         android:id="@+id/text_scroll_view"
         android:layout_width="395dp"
-        android:layout_height="396dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="394dp"
+        android:layout_marginTop="60dp"
         android:layout_marginBottom="9dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -86,80 +92,78 @@
             android:id="@+id/text_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/my_intro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/my_intro"
-                />
+                android:textSize="18sp" />
+
             <TextView
                 android:id="@+id/skills"
-                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:text="@string/skills"
-                />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/hobbies"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="@string/hobbies" />
+                android:layout_marginTop="5dp"
+                android:text="@string/hobbies"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/future"
-                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:text="@string/future"
-                />
+                android:textSize="18sp" />
+
             <TextView
                 android:id="@+id/team"
-                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:text="@string/team"
-                />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/more_info"
-                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:text="@string/more_info"
-                />
+                android:textSize="18sp" />
+
             <TextView
                 android:id="@+id/other_stuff"
-                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:text="@string/other_stuff"
-                />
+                android:textSize="18sp" />
+
             <TextView
                 android:id="@+id/sign_off"
-                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:text="@string/sign_off"
-                />
-            <ImageView
-                android:id="@+id/random"
-                android:layout_marginTop="6dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/dary_lyndsay"
-                android:contentDescription="@string/random_image"
-                />
+                android:textSize="18sp" />
+
             <TextView
                 android:id="@+id/image_desc"
-                android:layout_marginTop="6dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/image_desc"
-                />
+                android:layout_marginTop="0dp"
+                android:text="@string/last_bit"
+                android:textSize="18sp" />
 
         </LinearLayout>
 
