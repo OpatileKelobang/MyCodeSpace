@@ -44,6 +44,12 @@ public class MenuActivity extends AppCompatActivity {
         finish();
     }
 
+    public void galleryBtnClicked(View view)
+    {
+        startActivity(new Intent(this, GalleryActivity.class));
+        finish();
+    }
+
     public void aboutMeBtnClicked(View view)
     {
         startActivity(new Intent(this, AboutMe.class));
