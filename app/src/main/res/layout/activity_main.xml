@@ -77,7 +77,7 @@
         android:layout_marginEnd="33dp"
         android:layout_marginRight="33dp"
         android:layout_marginBottom="150dp"
-        android:background="@drawable/next_button_large_green_glow"
+        android:background="@drawable/button_main_green"
         android:text="@string/main_btn_next"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
