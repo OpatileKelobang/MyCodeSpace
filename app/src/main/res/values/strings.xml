@@ -34,6 +34,9 @@
     <string name="calc_button">Calculation</string>
     <string name="about_me_button">About Me</string>
     <string name="dev_profile_button">My Dev Profile</string>
+    <string name="feedback">Feedback</string>
+    <string name="gallery">Gallery</string>
+
 
     <!-- Calculation activity strings-->
     <string name="calculation_text">TRAPEZOID AREA CALCULATOR</string>
