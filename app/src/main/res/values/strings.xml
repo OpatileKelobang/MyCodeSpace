@@ -37,7 +37,6 @@
 
     <!-- Calculation activity strings-->
     <string name="calculation_text">TRAPEZOID AREA CALCULATOR</string>
-    <string name="calculation_header"></string>
     <string name="trapezoid_des">Trapezoid Equation</string>
     <string name="height">height</string>
     <string name="base1">base 1</string>
